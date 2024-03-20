@@ -1,0 +1,39 @@
+[
+    {
+      "title": "the art of war",
+      "cover_img": "./images/2.png.jpg",
+      "author": "sun tzu",
+      "author_img": "./images/boy1.png",
+      "reading_time": "2 hours",
+      "hashtags": ["strategy", "military", "leadership"],
+      "status": "available"
+    },
+    {
+      "title": "the alchemist",
+      "cover_img": "./images/4.jpg",
+      "author": "paulo coelho",
+      "author_img": "./images/boy2.png",
+      "reading_time": "3 hours",
+      "hashtags": ["fiction", "philosophy", "adventure"],
+      "status": "available"
+    },
+    {
+      "title": "thinking, fast and slow",
+      "cover_img": "./images/3.png",
+      "author": "daniel kahneman",
+      "author_img": "./images/girl1.jpg",
+      "reading_time": "6 hours",
+      "hashtags": ["cognitive science", "decision making"],
+      "status": "available"
+    },
+    {
+      "title": "sapiens: a brief history of humankind",
+      "cover_img": "./images/1.jpg",
+      "author": "yuval noah harari",
+      "author_img": "./images/girl2.jpg",
+      "reading_time": "5 hours",
+      "hashtags": ["history", "anthropology"],
+      "status": "available"
+    }
+  ]
+  
