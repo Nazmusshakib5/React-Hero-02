@@ -1,6 +1,6 @@
 [
     {
-      "title": "the art of war",
+      "title": "How to get your first job as a self-taught programmer",
       "cover_img": "../src/assets/images/1.jpg",
       "author": "sun tzu",
       "author_img": "../src/assets/images/boy1.png",
@@ -10,7 +10,7 @@
       "date":"24 sep 2024"
     },
     {
-      "title": "the alchemist",
+      "title": "How to get your first job as a self-taught programmer",
       "cover_img": "../src/assets/images/2.png",
       "author": "paulo coelho",
       "author_img": "../src/assets/images/boy2.png",
@@ -20,7 +20,7 @@
       "date":"24 sep 2024"
     },
     {
-      "title": "thinking, fast and slow",
+      "title": "thinking, fast and slow How to get your first job as a self-taught programmer",
       "cover_img": "../src/assets/images/3.png",
       "author": "daniel kahneman",
       "author_img": "../src/assets/images/girl1.jpg",
@@ -30,7 +30,7 @@
       "date":"24 sep 2024"
     },
     {
-      "title": "sapiens: a brief history of humankind",
+      "title": "sapiens: a brief history of humankind and How to get your first job as a self-taught programmer",
       "cover_img": "../src/assets/images/4.jpg",
       "author": "yuval noah harari",
       "author_img":"../src/assets/images/girl2.jpg",
