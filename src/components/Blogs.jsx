@@ -10,7 +10,7 @@ const Blogs = () => {
         .then(data => setBlogs(data))
     },[])
     return (
-        <div>
+        <div className="md:w-2/3">
             {
                 blogs.map(item => <Blog key={item.tile} blog={item}></Blog>)
             }
