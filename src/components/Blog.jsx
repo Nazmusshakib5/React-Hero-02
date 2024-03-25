@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { BsBookmarkCheck } from "react-icons/bs";
-const Blog = ({blog,bookMarkHandle,readingTimeHandler}) => {
-    const {title,cover_img,author,author_img,reading_time,hashtags,status,date}=blog;
+const Blog = ({blog,bookMarkHandle,readingTimeHandler,bookMarkHandler}) => {
+    const {title,cover_img,author,author_img,reading_time,hashtags,id,date}=blog;
     return (
-        <div className='mb-8'>
+        <div className='mb-8 shadow-xl p-4'>
             <img className='w-full mb-8 rounded-md' src={cover_img} alt="" />
             <div className='flex justify-between items-center mb-4'>
                 <div className='flex'>
@@ -22,16 +22,24 @@ const Blog = ({blog,bookMarkHandle,readingTimeHandler}) => {
             </div>
             <div>
                 {
-                    hashtags.map(item=> <span key={item.id} className='me-6'>#{item}</span>)
+                    hashtags.map((item,index)=> <span key={index} className='me-6'>#{item}</span>)
                 }
             </div>
             <h1 className='text-4xl '>{title}</h1>
-            <button onClick={()=>readingTimeHandler(blog.reading_time)}><a>Mark as read</a></button>
+            <div className='flex justify-between my-4'>
+                <div>
+                    <button className='bg-sky-500/15 rounded-lg p-4' onClick={()=>readingTimeHandler(blog.reading_time)}><a className='text-xl font-bold'>Add to ReadList</a></button>
+                </div>
+                <div>
+                    <button className='bg-sky-500/15 rounded-lg p-4' onClick={()=>bookMarkHandler(id)}><a className='text-xl font-bold'>Remove Bookmark</a></button>
+                </div>
+            </div>
+            
         </div>
     );
 };
 
-Blog.PropTypes={
-    blog:PropTypes.object.isRequired
+Blog.propTypes={
+    blog:propTypes.object.isRequired
 }
 export default Blog;

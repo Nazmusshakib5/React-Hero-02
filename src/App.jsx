@@ -18,11 +18,15 @@ function App() {
     const readingTimeHandler=(readingTime)=>{
       setTimee(timee+Number(readingTime))  
     }
+    const bookMarkHandler=(id)=>{
+        const afterRemoveBookmarked=bookmarks.filter(bookmark => bookmark.id !=id)
+        setBookmarks(afterRemoveBookmarked)
+    }
   return (
     <>
       <Header></Header>
       <div className='md:flex md:max-w-7xl w-5/6 mx-auto gap-6'>
-        <Blogs bookMarkHandle={bookMarkHandle} readingTimeHandler={readingTimeHandler}></Blogs>
+        <Blogs bookMarkHandle={bookMarkHandle} readingTimeHandler={readingTimeHandler} bookMarkHandler={bookMarkHandler}></Blogs>
         <Bookmarks bookmarks={bookmarks} timee={timee}></Bookmarks>
       </div>
     </>
